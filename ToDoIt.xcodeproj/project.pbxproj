@@ -15,6 +15,11 @@
 		5E79711124A4ACBA0012D600 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E79711324A4ACBA0012D600 /* Localizable.strings */; };
 		5E8D4B9124A4B4860019AF46 /* EventsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D4B9024A4B4860019AF46 /* EventsListPresenter.swift */; };
 		5E8D4B9424A4B7D80019AF46 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D4B9324A4B7D80019AF46 /* EventCell.swift */; };
+		5EC26FE724AA887B00EF21B0 /* DayEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC26FE624AA887B00EF21B0 /* DayEntity.swift */; };
+		5EC26FE924AA88D700EF21B0 /* TDIDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC26FE824AA88D700EF21B0 /* TDIDateView.swift */; };
+		5EC26FEB24AA89DF00EF21B0 /* TDICalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC26FEA24AA89DF00EF21B0 /* TDICalendarView.swift */; };
+		5EC26FED24AA8A2200EF21B0 /* CalendarBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC26FEC24AA8A2200EF21B0 /* CalendarBaseVC.swift */; };
+		5EC26FEF24AA8AF600EF21B0 /* CalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC26FEE24AA8AF600EF21B0 /* CalendarPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		5E79711424A4ACC70012D600 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5E8D4B9024A4B4860019AF46 /* EventsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListPresenter.swift; sourceTree = "<group>"; };
 		5E8D4B9324A4B7D80019AF46 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		5EC26FE624AA887B00EF21B0 /* DayEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEntity.swift; sourceTree = "<group>"; };
+		5EC26FE824AA88D700EF21B0 /* TDIDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDIDateView.swift; sourceTree = "<group>"; };
+		5EC26FEA24AA89DF00EF21B0 /* TDICalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDICalendarView.swift; sourceTree = "<group>"; };
+		5EC26FEC24AA8A2200EF21B0 /* CalendarBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarBaseVC.swift; sourceTree = "<group>"; };
+		5EC26FEE24AA8AF600EF21B0 /* CalendarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,7 @@
 		5E7970F124A4A8870012D600 /* ToDoIt */ = {
 			isa = PBXGroup;
 			children = (
+				5EC26FE224AA882700EF21B0 /* DateCalendar */,
 				5E79710B24A4A92A0012D600 /* EventsListModule */,
 				5E79710C24A4A9450012D600 /* CreateEventModule */,
 				5E79710824A4A8B50012D600 /* BaseEntities */,
@@ -128,6 +139,42 @@
 			children = (
 			);
 			path = DBManager;
+			sourceTree = "<group>";
+		};
+		5EC26FE224AA882700EF21B0 /* DateCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				5EC26FE524AA886200EF21B0 /* View */,
+				5EC26FE424AA885A00EF21B0 /* Presenter */,
+				5EC26FE324AA883A00EF21B0 /* Model */,
+			);
+			path = DateCalendar;
+			sourceTree = "<group>";
+		};
+		5EC26FE324AA883A00EF21B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EC26FE624AA887B00EF21B0 /* DayEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5EC26FE424AA885A00EF21B0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5EC26FEE24AA8AF600EF21B0 /* CalendarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5EC26FE524AA886200EF21B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5EC26FE824AA88D700EF21B0 /* TDIDateView.swift */,
+				5EC26FEA24AA89DF00EF21B0 /* TDICalendarView.swift */,
+				5EC26FEC24AA8A2200EF21B0 /* CalendarBaseVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +251,13 @@
 				5E79710724A4A8AE0012D600 /* Event.swift in Sources */,
 				5E8D4B9124A4B4860019AF46 /* EventsListPresenter.swift in Sources */,
 				5E7970F724A4A8870012D600 /* EventsListVC.swift in Sources */,
+				5EC26FEB24AA89DF00EF21B0 /* TDICalendarView.swift in Sources */,
 				5E7970F324A4A8870012D600 /* AppDelegate.swift in Sources */,
+				5EC26FED24AA8A2200EF21B0 /* CalendarBaseVC.swift in Sources */,
+				5EC26FE724AA887B00EF21B0 /* DayEntity.swift in Sources */,
 				5E8D4B9424A4B7D80019AF46 /* EventCell.swift in Sources */,
+				5EC26FEF24AA8AF600EF21B0 /* CalendarPresenter.swift in Sources */,
+				5EC26FE924AA88D700EF21B0 /* TDIDateView.swift in Sources */,
 				5E7970F524A4A8870012D600 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

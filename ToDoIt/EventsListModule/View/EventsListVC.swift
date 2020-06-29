@@ -30,7 +30,8 @@ class EventsListViewController: UIViewController {
     }()
     
     convenience init() {
-         presenter = EventsListPresenterImpl()
+        self.init()
+        presenter = EventsListPresenterImpl()
     }
 
     override func viewDidLoad() {
